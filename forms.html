@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+
+<body>
+    <h1>Регистрация в библиотеке</h1>
+    <form action="____" method="___" enctype="____">  
+        <div class="table">
+            <fieldset>
+                <legend>Контактные данные</legend>
+                <div class="main">
+                <div class="box">
+                <label for="name">ФИО<span class="red">*</span></label>
+                <textarea name="textaria" id="name" cols="30" rows="2" wrap="soft" required>ФИО</textarea>
+                </div>
+                <div class="box">
+                <label for="mail" >E-mail:<span class="red">*</span></label>
+                <input  type="e-mail" id="mail" name="e-mail"  placeholder="E-mail" required>
+                </div>
+                <div class="box">
+                <label for="password">Пароль<span class="red">*</span></label>
+                <input  type="password" id="password" name="password" required placeholder="**********">
+                </div>
+                <div class="box">
+                <label for="tel">Телефон<span class="red">*</span></label>
+                  <input  type="tel" id="tel" name="tel" pattern="+(-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}"required placeholder="Tелефон" >
+                </div>
+                <div class="box">
+                <label for="address">Адресс<br>сайта</label>
+                   <input  type="text" id="address" name="text" placeholder="http://">
+                   <!--<textarea name="textarea" cols="50" rows="2" wrap="soft">http://</textarea>-->
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Дополнительные данные</legend>
+                <!--<label>Пол</label>
+                <select name="select[]" multiple size="2" id="sel">
+                    <option value="1">Мужской</option>
+                    <option value="2" selected>женский</option>
+                </select>-->
+                <div class="info">
+                <label for="gen">Пол</label>
+                <select id="gen">
+                    <option  value="men">Мужской</option>
+                    <option value="wumen">Женский</option>
+                </select>
+               <div class="info">
+                <label for="info">О себе</label>
+                    <textarea name="textarea" id="info" cols="30" rows="5" wrap="soft">Напишите о себе</textarea>
+                </div>            
+            </fieldset>
+            <fieldset>
+                <legend>Предпочтения в литературе</legend>
+                <div class="books">
+                <input type="checkbox" class="books-box" name="sub" id="1" checked>
+                <label for="1">Классическая литература</label>
+                </div>
+                <div class="books">
+                <input type="checkbox" class="books-box" name="sub" id="2">
+                <label for="2">Научная фантастика</label>
+                </div>
+                <div class="books">
+                <input type="checkbox" class="books-box" name="sub" id="3">
+                <label for="3">Детективы</label>
+                </div>
+                </checkbox>
+            </fieldset>
+            <fieldset>
+                <legend>Согласны ли Вы с правилами сайта</legend>
+                <div class="radio-bk">
+                <input type="radio" class="radio" id="bk1" name="radio">
+                <label for="bk1">Да</label>
+               </div>
+                <div class="radio-bk">
+                <input type="radio" class="radio" id="bk2" name="radio">
+                <label for="bk2">Нет </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Отправка формы</legend>
+                <input type="submit" value="Зарегестироваться">
+                <input type="reset" value="Очистить форму">      
+            </fieldset>
+        </div>  
+    </form>
+</body>
+
+</html>
